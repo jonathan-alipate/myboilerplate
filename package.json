@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jonathan-alipate/myboilerplate/issues"
   },
-  "homepage": "https://github.com/jonathan-alipate/myboilerplate#readme"
+  "homepage": "https://github.com/jonathan-alipate/myboilerplate#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
