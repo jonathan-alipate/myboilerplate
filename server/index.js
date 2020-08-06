@@ -6,4 +6,4 @@ server.listen(port, () => {
     console.log('listening on port ' + port)
 })
 
-server.use(express.static('public'))
+server.use(express.static('server/public'))
