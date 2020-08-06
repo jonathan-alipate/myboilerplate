@@ -7,6 +7,3 @@ server.listen(port, () => {
 })
 
 server.use(express.static('public'))
-// server.get('/', (req, res) => {
-//     res.send('<h1>Yo!</h2>')
-// })
