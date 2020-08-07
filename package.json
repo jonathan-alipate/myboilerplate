@@ -2,7 +2,7 @@
   "name": "myboilerplate",
   "version": "1.0.0",
   "description": "boiler-plate",
-  "main": "./server/index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "webpack",
@@ -31,6 +31,7 @@
     "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "fs": "0.0.1-security",
     "nodemon": "^2.0.4",
     "npm-run-all": "^4.1.5",
     "react": "^16.13.1",
