@@ -1,0 +1,1 @@
+//Actions are objects which tell the reducer what to do. e.g { type: 'ADD_ITEM', item: 'Shoes'}

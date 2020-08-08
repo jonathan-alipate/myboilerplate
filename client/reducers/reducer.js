@@ -1,0 +1,1 @@
+// reducers are functions that take the current state and action object as arguments, and returns the new state.
