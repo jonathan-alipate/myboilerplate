@@ -2,22 +2,31 @@
   "name": "myboilerplate",
   "version": "1.0.0",
   "description": "boiler-plate",
-  "main": "./src/index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "client": "webpack",
-    "server": "node server",
+    "server": "node src",
     "dev:client": "webpack --watch",
-    "dev:server": "nodemon",
-    "dev": "run-p dev:server dev:client",
-    "start": "run-s client server"
+    "dev:server": "nodemon src",
+    "start": "run-s client server",
+    "dev": "run-p dev:client dev:server"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jonathan-alipate/myboilerplate.git"
   },
   "author": "Jonathan Alipate",
-  "license": "MIT",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/jonathan-alipate/myboilerplate/issues"
   },
@@ -27,6 +36,11 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
@@ -35,6 +49,7 @@
     "nodemon": "^2.0.4",
     "npm-run-all": "^4.1.5",
     "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   }
